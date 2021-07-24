@@ -84,8 +84,8 @@ export default function Home() {
 
 					<p className={styles.menu__desc}>
 						<a
-							rel="noopener"
 							target="_blank"
+							rel="noreferrer"
 							href="https://gist.github.com/apriliandi246/255a47f02dc7e5b2cd5ea8573724d74d"
 						>
 							Go to the example.
