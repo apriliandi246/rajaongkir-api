@@ -10,7 +10,7 @@ Rajaongkir API using Next.js api routes.
 
 ### ⁇ Why
 
-Because CORS problem for the API itself.
+Because CORS problem from the API itself.
 
 <h3 align="center">. . .</h3>
 

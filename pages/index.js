@@ -3,46 +3,96 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
+		<>
 			<Head>
-				<title>Cek Ongkir 🔎</title>
-				<meta name="description" content="Cek ongkir based on Rajaongkir API" />
+				<title>Rajaongkir API</title>
+				<meta
+					name="description"
+					content="Rajaongkir API using Next.js API route"
+				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className={styles.main}>
-				<h1 className={styles.title}>Cek Ongkir 🔎</h1>
+			<div className={styles.container}>
+				<h1 className={styles.title}>Rajaongkir API using Next.js API route</h1>
 
-				<div className={styles.grid}>
-					<a href="https://nextjs.org/docs" className={styles.card}>
-						<h2>Documentation &rarr;</h2>
-						<p>Find in-depth information about Next.js features and API.</p>
-					</a>
+				<details className={styles.menu}>
+					<summary className={styles.menu__name}>Provinsi</summary>
 
-					<a href="https://nextjs.org/learn" className={styles.card}>
-						<h2>Learn &rarr;</h2>
-						<p>Learn about Next.js in an interactive course with quizzes!</p>
-					</a>
+					<p className={styles.menu__desc}>Mengambil semua provinsi.</p>
+					<p className={styles.menu__endpoint}>
+						https://rajaongkir-api.vercel.app/api/provinsi
+					</p>
 
-					<a
-						href="https://github.com/vercel/next.js/tree/master/examples"
-						className={styles.card}
-					>
-						<h2>Examples &rarr;</h2>
-						<p>Discover and deploy boilerplate example Next.js projects.</p>
-					</a>
+					<br />
+					<br />
+					<br />
 
-					<a
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						className={styles.card}
-					>
-						<h2>Deploy &rarr;</h2>
-						<p>
-							Instantly deploy your Next.js site to a public URL with Vercel.
-						</p>
-					</a>
-				</div>
-			</main>
-		</div>
+					<p className={styles.menu__desc}>
+						Mengambil data provinsi berdasarkan ID.
+					</p>
+					<p className={styles.menu__endpoint}>
+						https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=province_id
+					</p>
+				</details>
+
+				<details className={styles.menu}>
+					<summary className={styles.menu__name}>Kota/kabupaten</summary>
+
+					<p className={styles.menu__desc}>Mengambil semua kota/kabupaten.</p>
+					<p className={styles.menu__endpoint}>
+						https://rajaongkir-api.vercel.app/api/kota
+					</p>
+
+					<br />
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>
+						Mengambil data kota/kabupaten berdasarkan ID provinsi.
+					</p>
+					<p className={styles.menu__endpoint}>
+						https://rajaongkir-api.vercel.app/api/kota?provinsiId=province_id
+					</p>
+
+					<br />
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>
+						Mengambil data kota/kabupaten berdasarkan ID kota/kabupaten.
+					</p>
+					<p className={styles.menu__endpoint}>
+						https://rajaongkir-api.vercel.app/api/kota?kotaId=city_id
+					</p>
+
+					<br />
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>
+						Mengambil data kota/kabupaten berdasarkan ID provinsi dan ID
+						kota/kabupaten.
+					</p>
+					<p className={styles.menu__endpoint}>
+						https://rajaongkir-api.vercel.app/api/kota?provinsiId=province_id&kotaId=city_id
+					</p>
+				</details>
+
+				<details className={styles.menu}>
+					<summary className={styles.menu__name}>Cek ongkos kirim</summary>
+
+					<p className={styles.menu__desc}>
+						<a
+							rel="noopener"
+							target="_blank"
+							href="https://gist.github.com/apriliandi246/255a47f02dc7e5b2cd5ea8573724d74d"
+						>
+							Go to the example.
+						</a>
+					</p>
+				</details>
+			</div>
+		</>
 	);
 }
