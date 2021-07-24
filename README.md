@@ -4,7 +4,13 @@
 
 ### 👨‍💻 About
 
-Raja Ongkir API (for development only).
+Rajaongkir API using Next.js api routes.
+
+<h3 align="center">. . .</h3>
+
+### ⁇ Why
+
+Because CORS problem for the API itself.
 
 <h3 align="center">. . .</h3>
 
@@ -30,11 +36,6 @@ Intall all dependencies.
 ### 📂 Folder Structure
 
 - `api-key` - Your API key.
-
-<h3 align="center">. . .</h3>
-
-### ⚠ problems
-
-- _CORS_ when fetching API
+- `pages/api` - code for the API.
 
 <h3 align="right">(⌐■_■)</h3>
