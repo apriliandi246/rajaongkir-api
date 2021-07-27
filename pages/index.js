@@ -90,7 +90,7 @@ export default function Home() {
 						<a
 							target="_blank"
 							rel="noreferrer"
-							href="https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21"
+							href="https://rajaongkir-api.vercel.app/api/kota"
 						>
 							https://rajaongkir-api.vercel.app/api/kota
 						</a>
@@ -119,9 +119,9 @@ export default function Home() {
 						<a
 							target="_blank"
 							rel="noreferrer"
-							href="https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21"
+							href="https://rajaongkir-api.vercel.app/api/kota?provinsiId=21"
 						>
-							https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21
+							https://rajaongkir-api.vercel.app/api/kota?provinsiId=21
 						</a>
 					</p>
 
@@ -148,9 +148,9 @@ export default function Home() {
 						<a
 							target="_blank"
 							rel="noreferrer"
-							href="https://rajaongkir-api.vercel.app/api/kota?kotaId=1"
+							href="https://rajaongkir-api.vercel.app/api/kota?kotaId=429"
 						>
-							https://rajaongkir-api.vercel.app/api/kota?kotaId=1
+							https://rajaongkir-api.vercel.app/api/kota?kotaId=429
 						</a>
 					</p>
 
@@ -178,9 +178,9 @@ export default function Home() {
 						<a
 							target="_blank"
 							rel="noreferrer"
-							href="https://rajaongkir-api.vercel.app/api/kota?provinsiId=21&kotaId=1"
+							href="https://rajaongkir-api.vercel.app/api/kota?provinsiId=21&kotaId=429"
 						>
-							https://rajaongkir-api.vercel.app/api/kota?provinsiId=21&kotaId=1
+							https://rajaongkir-api.vercel.app/api/kota?provinsiId=21&kotaId=429
 						</a>
 					</p>
 				</details>
