@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/main.module.css";
 
 export default function Home() {
 	return (
@@ -20,8 +20,23 @@ export default function Home() {
 					<summary className={styles.menu__name}>Provinsi</summary>
 
 					<p className={styles.menu__desc}>Mengambil semua provinsi.</p>
-					<p className={styles.menu__endpoint}>
-						https://rajaongkir-api.vercel.app/api/provinsi
+
+					<pre className={styles.menu__endpoint}>
+						<code>https://rajaongkir-api.vercel.app/api/provinsi</code>
+					</pre>
+
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>Contoh :</p>
+
+					<p className={styles.menu__desc}>
+						<a
+							target="_blank"
+							href="https://rajaongkir-api.vercel.app/api/provinsi"
+						>
+							https://rajaongkir-api.vercel.app/api/provinsi
+						</a>
 					</p>
 
 					<br />
@@ -31,17 +46,51 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						Mengambil data provinsi berdasarkan ID.
 					</p>
-					<p className={styles.menu__endpoint}>
-						https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=province_id
+
+					<pre className={styles.menu__endpoint}>
+						<code>
+							https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=province_id
+						</code>
+					</pre>
+
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>Contoh :</p>
+
+					<p className={styles.menu__desc}>
+						<a
+							target="_blank"
+							href="https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21"
+						>
+							https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21
+						</a>
 					</p>
 				</details>
+
+				<br />
 
 				<details className={styles.menu}>
 					<summary className={styles.menu__name}>Kota/kabupaten</summary>
 
 					<p className={styles.menu__desc}>Mengambil semua kota/kabupaten.</p>
-					<p className={styles.menu__endpoint}>
-						https://rajaongkir-api.vercel.app/api/kota
+
+					<pre className={styles.menu__endpoint}>
+						<code>https://rajaongkir-api.vercel.app/api/kota</code>
+					</pre>
+
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>Contoh :</p>
+
+					<p className={styles.menu__desc}>
+						<a
+							target="_blank"
+							href="https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21"
+						>
+							https://rajaongkir-api.vercel.app/api/kota
+						</a>
 					</p>
 
 					<br />
@@ -51,8 +100,25 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						Mengambil data kota/kabupaten berdasarkan ID provinsi.
 					</p>
-					<p className={styles.menu__endpoint}>
-						https://rajaongkir-api.vercel.app/api/kota?provinsiId=province_id
+
+					<pre className={styles.menu__endpoint}>
+						<code>
+							https://rajaongkir-api.vercel.app/api/kota?provinsiId=province_id
+						</code>
+					</pre>
+
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>Contoh :</p>
+
+					<p className={styles.menu__desc}>
+						<a
+							target="_blank"
+							href="https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21"
+						>
+							https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21
+						</a>
 					</p>
 
 					<br />
@@ -62,8 +128,25 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						Mengambil data kota/kabupaten berdasarkan ID kota/kabupaten.
 					</p>
-					<p className={styles.menu__endpoint}>
-						https://rajaongkir-api.vercel.app/api/kota?kotaId=city_id
+
+					<pre className={styles.menu__endpoint}>
+						<code>
+							https://rajaongkir-api.vercel.app/api/kota?kotaId=city_id
+						</code>
+					</pre>
+
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>Contoh :</p>
+
+					<p className={styles.menu__desc}>
+						<a
+							target="_blank"
+							href="https://rajaongkir-api.vercel.app/api/kota?kotaId=1"
+						>
+							https://rajaongkir-api.vercel.app/api/kota?kotaId=1
+						</a>
 					</p>
 
 					<br />
@@ -74,10 +157,29 @@ export default function Home() {
 						Mengambil data kota/kabupaten berdasarkan ID provinsi dan ID
 						kota/kabupaten.
 					</p>
-					<p className={styles.menu__endpoint}>
-						https://rajaongkir-api.vercel.app/api/kota?provinsiId=province_id&kotaId=city_id
+
+					<pre className={styles.menu__endpoint}>
+						<code>
+							https://rajaongkir-api.vercel.app/api/kota?provinsiId=province_id&kotaId=city_id
+						</code>
+					</pre>
+
+					<br />
+					<br />
+
+					<p className={styles.menu__desc}>Contoh :</p>
+
+					<p className={styles.menu__desc}>
+						<a
+							target="_blank"
+							href="https://rajaongkir-api.vercel.app/api/kota?provinsiId=21&kotaId=1"
+						>
+							https://rajaongkir-api.vercel.app/api/kota?provinsiId=21&kotaId=1
+						</a>
 					</p>
 				</details>
+
+				<br />
 
 				<details className={styles.menu}>
 					<summary className={styles.menu__name}>Cek ongkos kirim</summary>
@@ -92,6 +194,8 @@ export default function Home() {
 						</a>
 					</p>
 				</details>
+
+				<br />
 			</div>
 		</>
 	);
