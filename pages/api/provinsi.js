@@ -3,20 +3,18 @@ import cors from "../../utils/cors";
 import API_KEY from "../../api-key/api-key";
 import runMiddleware from "../../utils/runMiddleware";
 
-let endPoint = `https://api.rajaongkir.com/starter/province?key=${API_KEY}`;
-
 export default async function handler(req, res) {
-	const result = {
-		rajaongkir: {},
-	};
+	let endPoint;
+	const query = req.query;
+	const result = { rajaongkir: {} };
 
 	await runMiddleware(req, res, cors);
 
 	if (req.method === "GET") {
-		const query = req.query;
-
 		if (query.hasOwnProperty("provinsiId") === true) {
-			endPoint += `&id=${req.query.provinsiId}`;
+			endPoint = `https://api.rajaongkir.com/starter/province?key=${API_KEY}&id=${req.query.provinsiId}`;
+		} else {
+			endPoint = `https://api.rajaongkir.com/starter/province?key=${API_KEY}`;
 		}
 
 		const response = await fetch(endPoint, { method: "GET" });

@@ -3,31 +3,25 @@ import cors from "../../utils/cors";
 import API_KEY from "../../api-key/api-key";
 import runMiddleware from "../../utils/runMiddleware";
 
-let endPoint = `https://api.rajaongkir.com/starter/city?key=${API_KEY}`;
-
 export default async function handler(req, res) {
-	const result = {
-		rajaongkir: {},
-	};
+	let endPoint;
+	const query = req.query;
+	const result = { rajaongkir: {} };
 
 	await runMiddleware(req, res, cors);
 
 	if (req.method === "GET") {
-		const query = req.query;
-
-		if (query.hasOwnProperty("provinsiId") === true) {
-			endPoint += `&province=${req.query.provinsiId}`;
-		}
-
-		if (query.hasOwnProperty("kotaId") === true) {
-			endPoint += `&id=${req.query.kotaId}`;
-		}
-
 		if (
 			query.hasOwnProperty("kotaId") === true &&
 			query.hasOwnProperty("provinsiId") === true
 		) {
-			endPoint += `&id=${req.query.kotaId}&province=${req.query.provinsiId}`;
+			endPoint = `https://api.rajaongkir.com/starter/city?key=${API_KEY}&id=${req.query.kotaId}&province=${req.query.provinsiId}`;
+		} else if (query.hasOwnProperty("kotaId") === true) {
+			endPoint = `https://api.rajaongkir.com/starter/city?key=${API_KEY}&id=${req.query.kotaId}`;
+		} else if (query.hasOwnProperty("provinsiId") === true) {
+			endPoint = `https://api.rajaongkir.com/starter/city?key=${API_KEY}&province=${req.query.provinsiId}`;
+		} else {
+			endPoint = `https://api.rajaongkir.com/starter/city?key=${API_KEY}`;
 		}
 
 		const response = await fetch(endPoint, { method: "GET" });

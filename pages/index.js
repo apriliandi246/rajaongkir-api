@@ -33,6 +33,7 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://rajaongkir-api.vercel.app/api/provinsi"
 						>
 							https://rajaongkir-api.vercel.app/api/provinsi
@@ -61,6 +62,7 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21"
 						>
 							https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21
@@ -87,6 +89,7 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21"
 						>
 							https://rajaongkir-api.vercel.app/api/kota
@@ -115,6 +118,7 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21"
 						>
 							https://rajaongkir-api.vercel.app/api/provinsi?provinsiId=21
@@ -143,6 +147,7 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://rajaongkir-api.vercel.app/api/kota?kotaId=1"
 						>
 							https://rajaongkir-api.vercel.app/api/kota?kotaId=1
@@ -172,6 +177,7 @@ export default function Home() {
 					<p className={styles.menu__desc}>
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://rajaongkir-api.vercel.app/api/kota?provinsiId=21&kotaId=1"
 						>
 							https://rajaongkir-api.vercel.app/api/kota?provinsiId=21&kotaId=1
